@@ -14,24 +14,21 @@ function getDonateInput(donationID, totalDonationID) {
 }
 
 
-// Function to add donation history
-function addToHistory(amount) {
+function addToHistory(amount, customTextID) {
     const historyList = document.getElementById('history');
+    const customText = document.getElementById(customTextID).innerText;
 
     const historyEntry = document.createElement('div');
-    historyEntry.classList.add('font-bold' ,'p-4','border-gray-100','rounded-lg','border-2'); // Optional: add a class for styling
+    historyEntry.classList.add('font-bold' ,'p-4','border-gray-100','rounded-lg','border-2'); 
 
     const amountParagraph = document.createElement('p');
-    amountParagraph.textContent = `${amount} BDT is Donated for Bangladesh`;
+    amountParagraph.textContent = `${amount} BDT is Donated for ${customText}`;
 
     const dateParagraph = document.createElement('p');
     const currentTime = new Date().toString();
     dateParagraph.textContent = `Date: ${currentTime}`;
 
-    // Append p elements to the history entry div
     historyEntry.appendChild(amountParagraph);
     historyEntry.appendChild(dateParagraph);
-
-    // Append the history entry div to the history list
     historyList.appendChild(historyEntry);
 }

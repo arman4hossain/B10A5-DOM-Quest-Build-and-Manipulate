@@ -20,8 +20,37 @@ document.getElementById("Donate-btn-NK").addEventListener('click', function (eve
     if (donationAmount) {
         document.getElementById("myBalance").innerText = donationAmount.myBalances;
         document.getElementById("NoakhaliBalance").innerText = donationAmount.totalDonation;
-        
+
         // Add to history after donation is successful
-        addToHistory(donationAmount.donationAmount);
+        addToHistory(donationAmount.donationAmount, 'donationHeaderNK');
     }
 });
+
+document.getElementById("Donate-btn-Feni").addEventListener('click', function (event) {
+    event.preventDefault();
+    const donationAmount = getDonateInput('donateAmountFeni', 'FeniBalance');
+
+    if (donationAmount) {
+        document.getElementById("myBalance").innerText = donationAmount.myBalances;
+        document.getElementById("FeniBalance").innerText = donationAmount.totalDonation;
+
+        // Add to history after donation is successful
+        addToHistory(donationAmount.donationAmount, 'donationHeaderFeni');
+    }
+});
+
+
+document.getElementById("Donate-btn-Quota").addEventListener('click', function (event) {
+    event.preventDefault();
+    const donationAmount = getDonateInput('donateAmountQuota', 'QuotaBalance');
+
+    if (donationAmount) {
+        document.getElementById("myBalance").innerText = donationAmount.myBalances;
+        document.getElementById("QuotaBalance").innerText = donationAmount.totalDonation;
+
+        // Add to history after donation is successful
+        addToHistory(donationAmount.donationAmount, 'donationHeaderQuota');
+    }
+});
+
+
