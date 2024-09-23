@@ -20,8 +20,6 @@
         body {
             font-family: "Lexend", sans-serif;
         }
-
-        
     </style>
 </head>
 
@@ -39,10 +37,12 @@
         </nav>
 
         <!-- Donate & History Button -->
-        <section class="mx-auto max-w-screen-xl flex justify-center items-center gap-5 py-10">
-            <button id="Donate-btn" class="bg-[#B4F461] border-2 rounded-md px-4 py-2 font-bold hover:bg-opacity-80 text-xl "><a
+        <section class="mx-auto max-w-screen-xl flex justify-center items-center gap-5 py-7">
+            <button id="Donate-btn"
+                class="bg-[#B4F461] border-2 rounded-md px-4 py-2 font-bold hover:bg-opacity-80 text-xl "><a
                     href="#">Donate</a></button>
-            <button id="History-btn" class="bg-white border-2  border-gray-300  rounded-md px-4 py-2 hover:bg-opacity-80 text-xl "><a
+            <button id="History-btn"
+                class="bg-white border-2  border-gray-300  rounded-md px-4 py-2 hover:bg-opacity-80 text-xl "><a
                     href="#">History</a></button>
         </section>
     </header>
@@ -51,54 +51,80 @@
         <section id="Donate-section">
             <Section class="grid grid-cols-1 md:grid-cols-2 border-2 border-gray-300 gap-10 rounded-md p-5">
                 <div class="flex"><img class="w-full" src="assets/noakhali.png" alt="Loading"></div>
-                <div class="grid grid-cols-1 gap-2 ">
-                    <div class="grid gap-3">
-                        <p><span id="NoakhaliBalance">100</span> BDT</p>
-                        <H2 id="donationHeaderNK" class="tems-center font-bold text-xl">Donate for Flood at Noakhali, Bangladesh</H2>
+                <div class="grid grid-cols-1 gap-6 content-between">
+                    <div class="grid gap-10">
+                        <p class="text-xl font-bold flex gap-2 items-center p-3 rounded-md bg-gray-100 w-fit h-fit"><i
+                                class="fa-brands fa-bitcoin" style="color: #89ff29;"></i><span
+                                id="NoakhaliBalance">3400</span> BDT</p>
+                        <H2 id="donationHeaderNK" class="tems-center font-bold text-xl">Donate for Flood at Noakhali,
+                            Bangladesh</H2>
                         <p> The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
                             donation will help provide essential supplies and to those affected by this disaster. Every
-                            contribution, big or small, makes difference. Please join us in supporting the relief efforts
+                            contribution, big or small, makes difference. Please join us in supporting the relief
+                            efforts
                             and making a positive impact on the lives of those in need.</p>
                     </div>
-                    <input id="donateAmountNoakhali" type="text" placeholder="Write Donation Amount">
-                    <button id="Donate-btn-NK" class="bg-[#B4F461] border-1 rounded-md font-bold hover:bg-opacity-80" type="submit">Donate
-                    </button>
+                    <div class="grid grid-cols-1 gap-5">
+                        <input class="h-fit py-4 px-4" id="donateAmountNoakhali" type="text"
+                            placeholder="Write Donation Amount">
+                        <button id="Donate-btn-NK"
+                            class="bg-[#B4F461] border-1 rounded-md font-bold py-4 hover:bg-opacity-80 h-fit"
+                            type="submit">Donate
+                        </button>
+                    </div>
                 </div>
             </Section>
-    
+
             <Section class="grid grid-cols-1 md:grid-cols-2 border-2 border-gray-300 gap-10 rounded-md p-5">
                 <div class="flex"><img class="w-full" src="assets/feni.png" alt="Loading"></div>
-                <div class="grid grid-cols-1 gap-2 ">
-                    <div class="grid gap-3">
-                        <p><span id="FeniBalance">100</span> BDT</p>
-                        <H2 id="donationHeaderFeni" class="tems-center font-bold text-xl">Donate for Flood Relief in Feni,Bangladesh</H2>
+                <div class="grid grid-cols-1 gap-10 ">
+                    <div class="grid gap-2">
+                        <p class="text-xl font-bold flex gap-2 items-center p-3 rounded-md bg-gray-100 w-fit h-fit"><i
+                                class="fa-brands fa-bitcoin" style="color: #89ff29;"></i><span
+                                id="FeniBalance">5400</span> BDT</p>
+                        <H2 id="donationHeaderFeni" class="tems-center font-bold text-xl">Donate for Flood Relief in
+                            Feni,Bangladesh</H2>
                         <p> The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
                             donation will help provide essential supplies and to those affected by this disaster. Every
-                            contribution, big or small, makes difference. Please join us in supporting the relief efforts
+                            contribution, big or small, makes difference. Please join us in supporting the relief
+                            efforts
                             and making a positive impact on the lives of those in need.</p>
                     </div>
-                    <input id="donateAmountFeni" type="text" placeholder="Write Donation Amount">
-                    <button id="Donate-btn-Feni" class="bg-[#B4F461] border-1 rounded-md font-bold hover:bg-opacity-80" type="submit">
-                        <ahref="#">Donate Now</a>
-                    </button>
+                    <div class="grid grid-cols-1 gap-5">
+                        <input class="h-fit py-4 px-4" id="donateAmountFeni" type="text"
+                            placeholder="Write Donation Amount">
+                        <button id="Donate-btn-Feni"
+                            class="bg-[#B4F461] border-1 rounded-md font-bold py-4 hover:bg-opacity-80 h-fit"
+                            type="submit">
+                            <ahref="#">Donate Now</a>
+                        </button>
+                    </div>
                 </div>
             </Section>
-    
+
             <Section class="grid grid-cols-1 md:grid-cols-2 border-2 border-gray-300 gap-10 rounded-md p-5">
                 <div class="flex"><img class="w-full" src="assets/quota-protest.png" alt="Loading"></div>
-                <div class="grid grid-cols-1 gap-2 ">
+                <div class="grid grid-cols-1 gap-10 ">
                     <div class="grid gap-3">
-                        <p><span id="QuotaBalance">100</span> BDT</p>
-                        <H2 id="donationHeaderQuota" class="tems-center font-bold text-xl">Aid for Injured in the Quota Movement</H2>
+                        <p class="text-xl font-bold flex gap-2 items-center p-3 rounded-md bg-gray-100 w-fit h-fit"><i
+                                class="fa-brands fa-bitcoin" style="color: #89ff29;"></i><span
+                                id="QuotaBalance">1000</span> BDT</p>
+                        <H2 id="donationHeaderQuota" class="tems-center font-bold text-xl">Aid for Injured in the Quota
+                            Movement</H2>
                         <p> The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
                             donation will help provide essential supplies and to those affected by this disaster. Every
-                            contribution, big or small, makes difference. Please join us in supporting the relief efforts
+                            contribution, big or small, makes difference. Please join us in supporting the relief
+                            efforts
                             and making a positive impact on the lives of those in need.</p>
                     </div>
-                    <input id="donateAmountQuota" type="text" placeholder="Write Donation Amount">
-                    <button id="Donate-btn-Quota" class="bg-[#B4F461] border-1 rounded-md font-bold hover:bg-opacity-80" type="submit">
+                    <div class="grid grid-cols-1 gap-1">
+                        <input class="h-fit py-4 px-4" id="donateAmountQuota" type="text"
+                        placeholder="Write Donation Amount">
+                    <button id="Donate-btn-Quota"
+                        class="bg-[#B4F461] border-1 rounded-md font-bold py-4 hover:bg-opacity-80 h-fit" type="submit">
                         <ahref="#">Donate Now</a>
                     </button>
+                    </div>
                 </div>
             </Section>
         </section>
