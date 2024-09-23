@@ -54,3 +54,9 @@ document.getElementById("Donate-btn-Quota").addEventListener('click', function (
 });
 
 
+document.getElementById("closeAlert").addEventListener("click", function() {
+    document.getElementById("donationAlert").classList.add("hidden");
+});
+
+
+

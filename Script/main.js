@@ -6,6 +6,8 @@ function getDonateInput(donationID, totalDonationID) {
     if (!isNaN(donationAmount) && donationAmount > 0 && donationAmount <= myBalances) {
         myBalances -= donationAmount;
         totalDonation += donationAmount;
+
+        document.getElementById('donationAlert').classList.remove('hidden');
         return { totalDonation, myBalances, donationAmount };
     } else {
         alert('Invalid donation amount or insufficient balance.');
