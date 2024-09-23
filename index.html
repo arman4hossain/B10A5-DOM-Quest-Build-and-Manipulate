@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>But Ticket</title>
+
+    <!-- Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- uiIcon and Tailwindcss -->
+    <script src="https://kit.fontawesome.com/390e89a3cc.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        body {
+            font-family: "Lexend", sans-serif;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <header class=" backdrop-blur-md bg-white/30 fixed w-full">
+        <nav class="mx-auto max-w-screen-xl py-5 flex justify-between items-center">
+            <button class="bg-lime-400 border-1 rounded-md px-4 py-2 font-bold hover:bg-opacity-80"><a
+                    href="#">Blog</a></button>
+            <h1 class="flex gap-2 items-center font-bold text-xl"><img class="w-10 h-10" src="assets/logo.png"
+                    alt="Donate-Logo">Donate Bangladesh</h1>
+            <div class="flex gap-2 items-center">
+                <img class="w-10 h-10" src="assets/coin.png" alt="">
+                <h1 class="font-bold text-xl"><span id="myBalance">6500</span>BDT</h1>
+            </div>
+        </nav>
+
+        <!-- Donate & History Button -->
+        <section class="mx-auto max-w-screen-xl flex justify-center items-center gap-5 py-10">
+            <button id="Donate-btn" class="bg-[#B4F461] border-2 rounded-md px-4 py-2 font-bold hover:bg-opacity-80 text-xl "><a
+                    href="#">Donate</a></button>
+            <button id="History-btn" class="bg-white border-2  border-gray-300  rounded-md px-4 py-2 hover:bg-opacity-80 text-xl "><a
+                    href="#">History</a></button>
+        </section>
+    </header>
+
+    <main class="mx-auto max-w-screen-xl grid gap-10 pt-52 pb-11">
+        <section id="Donate-section">
+            <Section class="grid grid-cols-1 md:grid-cols-2 border-2 border-gray-300 gap-10 rounded-md p-5">
+                <div class="flex"><img class="w-full" src="assets/noakhali.png" alt="Loading"></div>
+                <div class="grid grid-cols-1 gap-2 ">
+                    <div class="grid gap-3">
+                        <p><span id="NoakhaliBalance">100</span> BDT</p>
+                        <H2 id="donationHeaderText" class="tems-center font-bold text-xl">Donate for Flood at Noakhali, Bangladesh</H2>
+                        <p> The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
+                            donation will help provide essential supplies and to those affected by this disaster. Every
+                            contribution, big or small, makes difference. Please join us in supporting the relief efforts
+                            and making a positive impact on the lives of those in need.</p>
+                    </div>
+                    <input id="donateAmountNoakhali" type="text" placeholder="Write Donation Amount">
+                    <button id="Donate-btn-NK" class="bg-[#B4F461] border-1 rounded-md font-bold hover:bg-opacity-80" type="submit">Donate
+                    </button>
+                </div>
+            </Section>
+    
+            <Section class="grid grid-cols-1 md:grid-cols-2 border-2 border-gray-300 gap-10 rounded-md p-5">
+                <div class="flex"><img class="w-full" src="assets/feni.png" alt="Loading"></div>
+                <div class="grid grid-cols-1 gap-2 ">
+                    <div class="grid gap-3">
+                        <p><span id="FeniBalance">100</span> BDT</p>
+                        <H2 class="tems-center font-bold text-xl">Donate for Flood Relief in Feni,Bangladesh</H2>
+                        <p> The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
+                            donation will help provide essential supplies and to those affected by this disaster. Every
+                            contribution, big or small, makes difference. Please join us in supporting the relief efforts
+                            and making a positive impact on the lives of those in need.</p>
+                    </div>
+                    <input type="text" placeholder="Write Donation Amount">
+                    <button class="bg-[#B4F461] border-1 rounded-md font-bold hover:bg-opacity-80" type="submit">
+                        <ahref="#">Donate Now</a>
+                    </button>
+                </div>
+            </Section>
+    
+            <Section class="grid grid-cols-1 md:grid-cols-2 border-2 border-gray-300 gap-10 rounded-md p-5">
+                <div class="flex"><img class="w-full" src="assets/quota-protest.png" alt="Loading"></div>
+                <div class="grid grid-cols-1 gap-2 ">
+                    <div class="grid gap-3">
+                        <p><span id="QuotaBalance">100</span> BDT</p>
+                        <H2 class="tems-center font-bold text-xl">Aid for Injured in the Quota Movement</H2>
+                        <p> The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
+                            donation will help provide essential supplies and to those affected by this disaster. Every
+                            contribution, big or small, makes difference. Please join us in supporting the relief efforts
+                            and making a positive impact on the lives of those in need.</p>
+                    </div>
+                    <input type="text" placeholder="Write Donation Amount">
+                    <button class="bg-[#B4F461] border-1 rounded-md font-bold hover:bg-opacity-80" type="submit">
+                        <ahref="#">Donate Now</a>
+                    </button>
+                </div>
+            </Section>
+        </section>
+
+        <section id="History-section" class="hidden">
+            <div id="history" class="grid gap-5">
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <main class="">
+
+    </main>
+
+    <footer class="h-32 bg-gray-100">
+
+    </footer>
+
+
+    <script src="Script/main.js"></script>
+    <script src="Script/index.js"></script>
+</body>
+
+</html>
