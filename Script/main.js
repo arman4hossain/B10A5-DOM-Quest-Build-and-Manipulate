@@ -1,3 +1,5 @@
+
+
 function getDonateInput(donationID, totalDonationID) {
     let myBalances = parseFloat(document.getElementById("myBalance").innerText);
     const donationAmount = parseFloat(document.getElementById(donationID).value) ;
